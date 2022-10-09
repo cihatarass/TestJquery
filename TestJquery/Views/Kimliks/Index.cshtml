@@ -1,0 +1,26 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>veriler</h2>
+
+<p>
+    <button id="temizle" class="btn btn-default">Tabloyu Temizle</button>
+    <button id="yenile" class="btn btn-warning">Yenile</button>
+    <button id="ekle" class="btn btn-success">Ekle</button>
+    <button id="sil" class="btn btn-danger">Sil</button>
+</p>
+<table class="table"></table>
+
+@section scripts{
+    <script src="~/Scripts/jquery-3.6.0.js"></script>
+    <script src="~/Scripts/kimlik.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Veriler();
+        });
+    </script>
+    <script src="~/Scripts/sweetalert2.min.js"></script>
+}
